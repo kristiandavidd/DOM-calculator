@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const display = document.querySelector(".w-full .bg-[#FCDFE5] .text-4xl");
+    const display = document.getElementById("display");
     const buttons = document.querySelectorAll(".button");
     let currentInput = "";
     let previousInput = "";
@@ -77,3 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
+
+// const buttons = document.querySelectorAll(".button");
+
+// buttons.forEach((button) => {
+//     button.addEventListener("click", function() {
+//         const buttonText = button.textContent;
+//         const display = document.getElementById("display");
+//         display.textContent = buttonText;
+//     });
+// });

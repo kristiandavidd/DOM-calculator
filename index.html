@@ -7,7 +7,7 @@
 
     <script src="https://kit.fontawesome.com/03357f25c3.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="index.js"></script>
+    
     <style>
         body {
             background-color: #FCDFE5;
@@ -19,29 +19,29 @@
     <div class="text-2xl w-[500px]  mx-auto my-4 p-5 bg-white rounded-[10px]">
         <h2 id="title" class="font-bold text-center m-2 text-[#EE4266]">DOM Calculator</h2>
         <div class="w-full bg-[#FCDFE5] h-[100px] flex items-end justify-end p-2 rounded-[10px]">
-            <p class="text-[#F0617F] text-4xl text-center">0</p>
+            <p id="display" class="text-[#F0617F] text-4xl text-center">0</p>
         </div>
         <div class=" w-full my-4 h-[300px] grid grid-rows-5 grid-cols-4 gap-2">
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold">AC</p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266]"><i class="fa-solid fa-delete-left"></i></p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold"><i class="fa-solid fa-percent"></i></p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold"><i class="fa-solid fa-divide"></i></p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">7</p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">8</p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">9</p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold"><i class="fa-solid fa-xmark"></i></p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">4</p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">5</p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">6</p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold"><i class="fa-solid fa-minus"></i></p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">1</p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">2</p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">3</p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold"><i class="fa-solid fa-plus"></i></p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer col-span-2">0</p>
-            <p class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold col-span-2"><i class="fa-solid fa-equals"></i></p>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold">AC</button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266]"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold"><i class="fa-solid fa-percent"></i></button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold"><i class="fa-solid fa-divide"></i></button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">7</button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">8</button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">9</button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold"><i class="fa-solid fa-xmark"></i></button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">4</button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">5</button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">6</button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold"><i class="fa-solid fa-minus"></i></button>
+            <button id="num1" class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">1</button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">2</button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer">3</button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold"><i class="fa-solid fa-plus"></i></b>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer col-span-2">0</button>
+            <button class="button w-full bg-[#F9C0CC] p-2 rounded-[5px] text-center hover:bg-[#F6A0B2] transition-300 cursor-pointer text-[#EE4266] font-bold col-span-2"><i class="fa-solid fa-equals"></i></button>
         </div>
     </div>
-    
+    <script src="index.js"></script>
 </body>
 </html>
