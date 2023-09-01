@@ -77,14 +77,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
-
-
-// const buttons = document.querySelectorAll(".button");
-
-// buttons.forEach((button) => {
-//     button.addEventListener("click", function() {
-//         const buttonText = button.textContent;
-//         const display = document.getElementById("display");
-//         display.textContent = buttonText;
-//     });
-// });
