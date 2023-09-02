@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (buttonText === "AC") {
                 clear();
-            } else if (buttonText === "C") {
+            } else if (buttonText === document.getElementById("hapus").textContent) {
                 currentInput = currentInput.slice(0, -1);
                 updateDisplay();
             } else if (buttonText === "=") {
@@ -60,11 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 case "-":
                     result = prev - current;
                     break;
-                case "x":
+                case "*":
                     result = prev * current;
                     break;
                 case "/":
                     result = prev / current;
+                    break;
+                case "%":
+                    result = (prev / 100) * current;
                     break;
                 default:
                     return;
