@@ -46,37 +46,4 @@ document.addEventListener("DOMContentLoaded", () => {
             currentInput = "";
         }
     }
-
-    function calculate() {
-        if (previousInput !== "" && currentInput !== "" && operator !== "") {
-            const prev = parseFloat(previousInput);
-            const current = parseFloat(currentInput);
-            let result;
-
-            switch (operator) {
-                case "+":
-                    result = prev + current;
-                    break;
-                case "-":
-                    result = prev - current;
-                    break;
-                case "*":
-                    result = prev * current;
-                    break;
-                case "/":
-                    result = prev / current;
-                    break;
-                case "%":
-                    result = (prev / 100) * current;
-                    break;
-                default:
-                    return;
-            }
-
-            currentInput = result.toString();
-            previousInput = "";
-            operator = "";
-            updateDisplay();
-        }
-    }
 });
