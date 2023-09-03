@@ -71,10 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 case "-":
                     result = prev - current;
                     break;
-                case "*":
+                case document.getElementById("kali").textContent:
                     result = prev * current;
                     break;
-                case "/":
+                case document.getElementById("bagi").textContent:
                     result = prev / current;
                     break;
                 case "%":
