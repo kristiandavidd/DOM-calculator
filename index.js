@@ -71,23 +71,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 case "-":
                     result = prev - current;
                     break;
-                case document.getElementById("kali").textContent:
+                case "*":
                     result = prev * current;
                     break;
-                case document.getElementById("bagi").textContent:
+                case "/":
                     result = prev / current;
                     break;
                 case "%":
-                    result = (prev / 100);
+                    result = (prev / 100) * current;
                     break;
                 default:
                     return;
             }
 
-            currentInput = result.toString().slice(0, maxLength);
+            currentInput = result.toString();
             previousInput = "";
             operator = "";
-            shouldReset = true; 
             updateDisplay();
         }
     }
