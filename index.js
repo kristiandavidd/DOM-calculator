@@ -80,10 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 default:
                     return;
             }
-
-            currentInput = result.toString();
+            currentInput = result.toString().slice(0, maxLength);
             previousInput = "";
             operator = "";
+            shouldReset = true; 
             updateDisplay();
         }
     }
