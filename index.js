@@ -77,9 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 case document.getElementById("bagi").textContent:
                     result = prev / current;
                     break;
-                case "%":
-                    result = (prev / 100) * current;
-                    break;
                 default:
                     return;
             }
